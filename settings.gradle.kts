@@ -1,2 +1,7 @@
-include(":app")
-// rootProject.name = "Modular"
+import ModuleDependency.APP
+import ModuleDependency.FEATURE_BASE
+
+include(
+    APP,
+    FEATURE_BASE
+)
