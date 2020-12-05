@@ -1,25 +1,21 @@
-import GradlePluginVersion.detekt
-import GradlePluginVersion.gradleBuildToolsVersion
-
 object GradlePluginVersion {
-    const val gradleBuildToolsVersion = "4.1.1"
-    const val ktlingGradle = "9.4.1"
-    const val detekt = "1.15.0-RC1"
-}
-
-object GradleDependency {
-    const val gradleBuildTools = "com.android.tools.build:gradle:$gradleBuildToolsVersion"
-    const val kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${CoreVersion.kotlin}"
-    const val detectGradlePlugin = "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:$detekt"
+    const val ANDROID_GRADLE = "4.1.1"
+    const val KTLINT_GRADLE = "9.4.1"
+    const val DETEKT = "1.15.0-RC1"
+    const val KOTLIN = CoreVersion.KOTLIN
 }
 
 object GradlePluginId {
-    const val androidApplication = "com.android.application"
-    const val kotlinAndroid = "kotlin-android"
-    const val kotlinAndroidExtensions = "kotlin-android-extensions"
+    const val ANDROID_APPLICATION = "com.android.application"
+    const val ANDROID_LIBRARY = "com.android.library"
+    const val KOTLIN_JVM = "org.jetbrains.kotlin.jvm"
+    const val KOTLIN_ANDROID = "org.jetbrains.kotlin.android"
+    const val KOTLIN_ANDROID_EXTENSIONS = "org.jetbrains.kotlin.android.extensions"
+    const val KTLINT_GRADLE = "org.jlleitschuh.gradle.ktlint"
+    const val DETEKT = "io.gitlab.arturbosch.detekt"
+}
 
-
-    const val ktlintGradle = "org.jlleitschuh.gradle.ktlint"
-
-    const val detekt = "io.gitlab.arturbosch.detekt"
+object GradleOldWayPlugins {
+    const val ANDROID_GRADLE =
+        "com.android.tools.build:gradle:${GradlePluginVersion.ANDROID_GRADLE}"
 }

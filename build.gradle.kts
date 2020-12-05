@@ -1,30 +1,23 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
-buildscript {
-
-    repositories {
-        google()
-        google()
-        jcenter()
-        gradlePluginPortal()
-    }
-    dependencies {
-        classpath(GradleDependency.gradleBuildTools)
-        classpath(GradleDependency.kotlinGradlePlugin)
-        classpath(GradleDependency.detectGradlePlugin)
-    }
+plugins {
+    id(GradlePluginId.DETEKT)
+    id(GradlePluginId.KTLINT_GRADLE)
+    id(GradlePluginId.KOTLIN_JVM) apply false
+    id(GradlePluginId.KOTLIN_ANDROID) apply false
+    id(GradlePluginId.KOTLIN_ANDROID_EXTENSIONS) apply false
+    id(GradlePluginId.ANDROID_APPLICATION) apply false
+    id(GradlePluginId.ANDROID_LIBRARY) apply false
 }
 
 allprojects {
+
     repositories {
         google()
         jcenter()
     }
-}
-
-plugins {
-    id(GradlePluginId.detekt) version GradlePluginVersion.detekt
-    id(GradlePluginId.ktlintGradle) version GradlePluginVersion.ktlingGradle
+    // We want to apply ktlint at all project level because it also checks build gradle files
+    apply(plugin = GradlePluginId.KTLINT_GRADLE)
 }
 
 // All kotlin modules

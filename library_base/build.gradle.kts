@@ -1,32 +1,28 @@
 plugins {
-    id(GradlePluginId.ANDROID_APPLICATION)
+    id(GradlePluginId.ANDROID_LIBRARY)
     id(GradlePluginId.KOTLIN_ANDROID)
     id(GradlePluginId.KOTLIN_ANDROID_EXTENSIONS)
-    id(GradlePluginId.KTLINT_GRADLE)
 }
 
 android {
     compileSdkVersion(AndroidConfig.COMPILE_SDK_VERSION)
 
     defaultConfig {
-        applicationId = AndroidConfig.ID
         minSdkVersion(AndroidConfig.MIN_SDK)
         targetSdkVersion(AndroidConfig.TARGET_SDK_VERSION)
-        buildToolsVersion(AndroidConfig.BUILD_TOOLS_VERSION)
 
         versionCode = AndroidConfig.VERSION_CODE
         versionName = AndroidConfig.VERSION_NAME
-
         testInstrumentationRunner = AndroidConfig.TEST_INSTRUMENTATION_RUNNER
     }
 
     buildTypes {
-        getByName(BuildType.Companion.RELEASE) {
+        getByName(BuildType.RELEASE) {
             isMinifyEnabled = BuildTypeRelease.isMinifyEnabled
             proguardFiles("proguard-android-optimize.txt", "proguard-rules.pro")
         }
 
-        getByName(BuildType.Companion.DEBUG) {
+        getByName(BuildType.DEBUG) {
             isMinifyEnabled = BuildTypeDebug.isMinifyEnabled
         }
     }
@@ -42,5 +38,11 @@ android {
 }
 
 dependencies {
-    api(project(ModuleDependency.LIBRARY_BASE))
+    api(LibraryDependency.KOTLIN)
+    api(LibraryDependency.ANDROID_CORE_KTX)
+    api(LibraryDependency.APP_COMPAT)
+    api(LibraryDependency.ANDROID_MATERIAL)
+    api(LibraryDependency.JUNIT)
+
+    addTestDependencies()
 }

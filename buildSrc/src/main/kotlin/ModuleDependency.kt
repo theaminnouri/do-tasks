@@ -1,4 +1,17 @@
+import kotlin.reflect.full.memberProperties
+
+private const val FEATURE_PREFIX = ":feature_"
+
 object ModuleDependency {
     const val APP = ":app"
-    const val FEATURE_BASE = ":feature_base"
+    const val LIBRARY_BASE = ":library_base"
+
+    fun getAllModules() = ModuleDependency::class.memberProperties
+        .filter { it.isConst }
+        .map { it.getter.call().toString() }
+        .toSet()
+
+    fun getDynamicFeatureModules() = getAllModules()
+        .filter { it.startsWith(FEATURE_PREFIX) }
+        .toSet()
 }
