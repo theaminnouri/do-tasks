@@ -44,4 +44,6 @@ android {
 
 dependencies {
     api(project(ModuleDependency.LIBRARY_BASE))
+
+    addTestDependencies()
 }

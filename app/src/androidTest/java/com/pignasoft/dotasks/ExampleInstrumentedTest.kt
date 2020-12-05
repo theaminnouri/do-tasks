@@ -1,4 +1,4 @@
-package com.pignasoft.modular
+package com.pignasoft.dotasks
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.runner.AndroidJUnit4
@@ -17,6 +17,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.pignasoft.modular", appContext.packageName)
+        assertEquals("com.pignasoft.dotasks", appContext.packageName)
     }
 }

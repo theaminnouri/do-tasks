@@ -1,7 +1,7 @@
 object AndroidConfig {
 
     const val COMPILE_SDK_VERSION = 30
-    const val ID = "com.pignasoft.modular"
+    const val ID = "com.pignasoft.dotasks"
     const val MIN_SDK = 21
     const val TARGET_SDK_VERSION = 30
     const val BUILD_TOOLS_VERSION = "30.0.2"

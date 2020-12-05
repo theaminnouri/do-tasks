@@ -1,4 +1,4 @@
-package com.pignasoft.modular.feature.base
+package com.pignasoft.dotasks.feature.base
 
 import org.junit.Assert.assertEquals
 import org.junit.Test
