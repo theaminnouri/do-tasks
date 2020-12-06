@@ -42,6 +42,7 @@ dependencies {
     api(LibraryDependency.ANDROID_CORE_KTX)
     api(LibraryDependency.APP_COMPAT)
     api(LibraryDependency.ANDROID_MATERIAL)
+    api(LibraryDependency.COROUTINE)
     api(LibraryDependency.JUNIT)
 
     addTestDependencies()
