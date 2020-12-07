@@ -3,6 +3,7 @@ plugins {
     id(GradlePluginId.KOTLIN_ANDROID)
     id(GradlePluginId.KOTLIN_ANDROID_EXTENSIONS)
     id(GradlePluginId.KTLINT_GRADLE)
+    id(GradlePluginId.KOTLIN_KAPT)
 }
 
 android {
@@ -44,6 +45,13 @@ android {
 
 dependencies {
     api(project(ModuleDependency.LIBRARY_BASE))
+
+    implementation(LibraryDependency.ANDROID_PLAY)
+    implementation(LibraryDependency.ANDROID_PLAY_KTX)
+    implementation(LibraryDependency.CONSTRAINT_LAYOUT)
+    implementation(LibraryDependency.ROOM_RUNTIME)
+    kapt(LibraryDependency.ROOM_COMPILER)
+    implementation(LibraryDependency.ROOM_KTX)
 
     addTestDependencies()
 }

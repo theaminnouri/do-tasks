@@ -14,6 +14,7 @@ object GradlePluginId {
     const val KOTLIN_ANDROID_EXTENSIONS = "org.jetbrains.kotlin.android.extensions"
     const val KTLINT_GRADLE = "org.jlleitschuh.gradle.ktlint"
     const val DETEKT = "io.gitlab.arturbosch.detekt"
+    const val KOTLIN_KAPT = "org.jetbrains.kotlin.kapt"
 }
 
 object GradleOldWayPlugins {
