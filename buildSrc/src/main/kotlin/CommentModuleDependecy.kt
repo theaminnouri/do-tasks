@@ -13,6 +13,7 @@ fun DependencyHandler.addTestDependencies() {
     testImplementation(LibraryDependency.MOCKK)
     testImplementation(LibraryDependency.FLUENT)
     testImplementation(LibraryDependency.ROOM_TEST)
+    testImplementation(LibraryDependency.ARCH_CORE_TESTING)
 }
 
 private fun DependencyHandler.testImplementation(dependencyNotation: Any): Dependency? =

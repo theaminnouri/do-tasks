@@ -24,6 +24,20 @@ allprojects {
 tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "1.8"
 }
+subprojects {
+
+    afterEvaluate {
+        configureAndroid()
+    }
+}
+
+fun Project.configureAndroid() {
+    (project.extensions.findByName("android") as? com.android.build.gradle.BaseExtension)?.run {
+        sourceSets {
+            map { it.java.srcDir("src/${it.name}/kotlin") }
+        }
+    }
+}
 
 task("staticCheck") {
     afterEvaluate {

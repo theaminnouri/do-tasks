@@ -12,12 +12,17 @@ object LibraryVersion {
     const val ANDROID_PLAY_CORE = "1.9.0"
     const val ANDROID_PLAY_CORE_KTX = "1.8.1"
     const val CONSTRAINT_LAYOUT = "2.0.4"
+    const val ANDROID_LIFECYCLE = "2.2.0"
+    const val ANDROID_ARCH = "2.1.0"
+    const val TIMBER = "4.7.1"
 }
 
 object LibraryDependency {
 
     const val KOTLIN =
         "org.jetbrains.kotlin:kotlin-stdlib:${CoreVersion.KOTLIN}"
+    const val KOTLIN_REFLECT =
+        "org.jetbrains.kotlin:kotlin-reflect:${CoreVersion.KOTLIN}"
     const val ANDROID_CORE_KTX =
         "androidx.core:core-ktx:${LibraryVersion.ANDROID_CORE_KTX}"
     const val APP_COMPAT =
@@ -54,4 +59,14 @@ object LibraryDependency {
         "com.google.android.play:core-ktx:${LibraryVersion.ANDROID_PLAY_CORE_KTX}"
     const val CONSTRAINT_LAYOUT =
         "androidx.constraintlayout:constraintlayout:${LibraryVersion.CONSTRAINT_LAYOUT}"
+    const val ANDROID_LIFECYCLE_VIEW_MODEL_KTX =
+        "androidx.lifecycle:lifecycle-viewmodel-ktx:${LibraryVersion.ANDROID_LIFECYCLE}"
+    const val ANDROID_LIFECYCLE_LIVEDATA_KTX =
+        "androidx.lifecycle:lifecycle-livedata-ktx:${LibraryVersion.ANDROID_LIFECYCLE}"
+    const val ANDROID_LIFECYCLE_COMPILER =
+        "androidx.lifecycle:lifecycle-compiler:${LibraryVersion.ANDROID_LIFECYCLE}"
+    const val ARCH_CORE_TESTING =
+        "androidx.arch.core:core-testing:${LibraryVersion.ANDROID_ARCH}"
+    const val TIMBER =
+        "com.jakewharton.timber:timber:${LibraryVersion.TIMBER}"
 }

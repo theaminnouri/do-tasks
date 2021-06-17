@@ -40,11 +40,24 @@ android {
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
+
     dynamicFeatures = ModuleDependency.getDynamicFeatureModules().toMutableSet()
+
+    testOptions {
+        unitTests.isReturnDefaultValues = TestOptions.IS_RETURN_DEFAULT_VALUES
+    }
 }
 
 dependencies {
-    api(project(ModuleDependency.LIBRARY_BASE))
+    api(LibraryDependency.KOTLIN)
+    api(LibraryDependency.ANDROID_CORE_KTX)
+    api(LibraryDependency.APP_COMPAT)
+    api(LibraryDependency.ANDROID_MATERIAL)
+    api(LibraryDependency.COROUTINE)
+    api(LibraryDependency.JUNIT)
+    api(LibraryDependency.TIMBER)
+    api(LibraryDependency.KOTLIN_REFLECT)
+    api(LibraryDependency.ANDROID_LIFECYCLE_VIEW_MODEL_KTX)
 
     implementation(LibraryDependency.ANDROID_PLAY)
     implementation(LibraryDependency.ANDROID_PLAY_KTX)

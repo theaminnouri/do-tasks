@@ -1,4 +1,3 @@
-include(":feature_add")
 pluginManagement {
     repositories {
         google()
@@ -15,7 +14,7 @@ pluginManagement {
         id("org.jetbrains.kotlin.android.extensions") version "1.4.20"
         id("io.gitlab.arturbosch.detekt") version "1.15.0-RC1"
         id("org.jlleitschuh.gradle.ktlint") version "9.4.1"
-        id ("org.jetbrains.kotlin.kapt") version "1.4.20"
+        id("org.jetbrains.kotlin.kapt") version "1.4.20"
     }
 
     resolutionStrategy {
@@ -33,6 +32,5 @@ pluginManagement {
 rootProject.buildFileName = "build.gradle.kts"
 include(
     ":app",
-    ":library_base",
-    ":feature_add"
+    ":feature_add_task"
 )
