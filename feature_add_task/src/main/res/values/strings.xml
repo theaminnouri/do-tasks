@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="unknown_error">unknown error</string>
+    <string name="title_feature_add_task">Add</string>
 </resources>

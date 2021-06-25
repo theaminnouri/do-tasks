@@ -6,6 +6,4 @@ data class AddTaskViewState(
     val loading: Boolean = true,
     val isAdded: Boolean = false,
     val errorMessageResId: Int? = null
-) : BaseViewState {
-
-}
+) : BaseViewState

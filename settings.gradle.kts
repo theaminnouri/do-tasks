@@ -6,9 +6,10 @@ pluginManagement {
     }
 
     plugins {
-        id("com.android.application") version "4.1.1"
-        id("com.android.library") version "4.1.1"
-        id("com.android.dynamic-feature") version "4.1.1"
+        id("com.android.application") version "4.2.0"
+        id("com.android.library") version "4.2.0"
+        id("com.android.dynamic-feature") version "4.2.0"
+        id("androidx.navigation.safeargs.kotlin") version "2.3.5"
         id("org.jetbrains.kotlin.jvm") version "1.4.20"
         id("org.jetbrains.kotlin.android") version "1.4.20"
         id("org.jetbrains.kotlin.android.extensions") version "1.4.20"
@@ -24,7 +25,7 @@ pluginManagement {
                 "com.android.application",
                 "com.android.dynamic-feature",
                 "com.android.library"
-                -> useModule("com.android.tools.build:gradle:4.1.1")
+                -> useModule("com.android.tools.build:gradle:4.2.0")
             }
         }
     }
@@ -32,5 +33,7 @@ pluginManagement {
 rootProject.buildFileName = "build.gradle.kts"
 include(
     ":app",
-    ":feature_add_task"
+    ":feature_tasks",
+    ":feature_add_task",
+    ":feature_profile"
 )

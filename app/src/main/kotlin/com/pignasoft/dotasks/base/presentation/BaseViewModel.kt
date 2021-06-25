@@ -5,7 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.pignasoft.dotasks.BuildConfig
-import com.pignasoft.dotasks.feature.base.presentation.state.BaseStateEvent
+import com.pignasoft.dotasks.base.presentation.state.BaseStateEvent
 import com.pignasoft.dotasks.base.presentation.state.BaseViewState
 import kotlinx.coroutines.launch
 import kotlin.properties.Delegates

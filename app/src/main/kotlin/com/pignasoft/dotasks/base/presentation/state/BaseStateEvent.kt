@@ -1,4 +1,3 @@
-package com.pignasoft.dotasks.feature.base.presentation.state
+package com.pignasoft.dotasks.base.presentation.state
 
-interface BaseStateEvent {
-}
+interface BaseStateEvent

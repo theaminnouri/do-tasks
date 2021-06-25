@@ -4,6 +4,7 @@ plugins {
     id(GradlePluginId.KOTLIN_ANDROID_EXTENSIONS)
     id(GradlePluginId.KTLINT_GRADLE)
     id(GradlePluginId.KOTLIN_KAPT)
+    id(GradlePluginId.SAFE_ARGS)
 }
 
 android {
@@ -42,9 +43,14 @@ android {
     }
 
     dynamicFeatures = ModuleDependency.getDynamicFeatureModules().toMutableSet()
+    println(dynamicFeatures.toString())
 
     testOptions {
         unitTests.isReturnDefaultValues = TestOptions.IS_RETURN_DEFAULT_VALUES
+    }
+
+    buildFeatures {
+        viewBinding = true
     }
 }
 
@@ -58,10 +64,14 @@ dependencies {
     api(LibraryDependency.TIMBER)
     api(LibraryDependency.KOTLIN_REFLECT)
     api(LibraryDependency.ANDROID_LIFECYCLE_VIEW_MODEL_KTX)
+    api(LibraryDependency.ANDROID_LIFECYCLE_COMMON)
+    api(LibraryDependency.CONSTRAINT_LAYOUT)
+    api(LibraryDependency.NAVIGATION_FRAGMENT)
+    api(LibraryDependency.NAVIGATION_UI)
+    api(LibraryDependency.NAVIGATION_DYNAMIC)
 
     implementation(LibraryDependency.ANDROID_PLAY)
     implementation(LibraryDependency.ANDROID_PLAY_KTX)
-    implementation(LibraryDependency.CONSTRAINT_LAYOUT)
     implementation(LibraryDependency.ROOM_RUNTIME)
     kapt(LibraryDependency.ROOM_COMPILER)
     implementation(LibraryDependency.ROOM_KTX)

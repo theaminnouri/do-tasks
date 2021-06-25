@@ -1,6 +1,6 @@
 package com.pignasoft.feature.addTask.presentation.state
 
-import com.pignasoft.dotasks.feature.base.presentation.state.BaseStateEvent
+import com.pignasoft.dotasks.base.presentation.state.BaseStateEvent
 import com.pignasoft.feature.addTask.domain.model.TaskDomainModel
 
 sealed class AddTaskStateEvent : BaseStateEvent {

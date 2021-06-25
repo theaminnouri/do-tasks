@@ -12,9 +12,10 @@ object LibraryVersion {
     const val ANDROID_PLAY_CORE = "1.9.0"
     const val ANDROID_PLAY_CORE_KTX = "1.8.1"
     const val CONSTRAINT_LAYOUT = "2.0.4"
-    const val ANDROID_LIFECYCLE = "2.2.0"
+    const val ANDROID_LIFECYCLE = "2.3.1"
     const val ANDROID_ARCH = "2.1.0"
     const val TIMBER = "4.7.1"
+    const val NAVIGATION = "2.3.5"
 }
 
 object LibraryDependency {
@@ -63,10 +64,17 @@ object LibraryDependency {
         "androidx.lifecycle:lifecycle-viewmodel-ktx:${LibraryVersion.ANDROID_LIFECYCLE}"
     const val ANDROID_LIFECYCLE_LIVEDATA_KTX =
         "androidx.lifecycle:lifecycle-livedata-ktx:${LibraryVersion.ANDROID_LIFECYCLE}"
-    const val ANDROID_LIFECYCLE_COMPILER =
-        "androidx.lifecycle:lifecycle-compiler:${LibraryVersion.ANDROID_LIFECYCLE}"
+    const val ANDROID_LIFECYCLE_COMMON =
+        "androidx.lifecycle:lifecycle-common-java8:${LibraryVersion.ANDROID_LIFECYCLE}"
     const val ARCH_CORE_TESTING =
         "androidx.arch.core:core-testing:${LibraryVersion.ANDROID_ARCH}"
     const val TIMBER =
         "com.jakewharton.timber:timber:${LibraryVersion.TIMBER}"
+    const val NAVIGATION_FRAGMENT =
+        "androidx.navigation:navigation-fragment-ktx:${LibraryVersion.NAVIGATION}"
+    const val NAVIGATION_UI = "androidx.navigation:navigation-ui-ktx:${LibraryVersion.NAVIGATION}"
+    const val NAVIGATION_DYNAMIC =
+        "androidx.navigation:navigation-dynamic-features-fragment:${LibraryVersion.NAVIGATION}"
+    const val NAVIGATION_TEST =
+        "androidx.navigation:navigation-testing:${LibraryVersion.NAVIGATION}"
 }

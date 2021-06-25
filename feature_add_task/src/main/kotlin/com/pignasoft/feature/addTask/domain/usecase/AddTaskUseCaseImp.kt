@@ -2,7 +2,6 @@ package com.pignasoft.feature.addTask.domain.usecase
 
 import com.pignasoft.feature.addTask.domain.model.TaskDomainModel
 import com.pignasoft.feature.addTask.domain.repository.AddTaskRepository
-import com.pignasoft.dotasks.feature_add.R
 
 interface AddTaskUseCase {
     suspend fun add(task: TaskDomainModel): Result
@@ -20,6 +19,6 @@ class AddTaskUseCaseImp constructor(private val repository: AddTaskRepository) {
         return if (add >= 0)
             Result.Success(add)
         else
-            Result.Error(R.string.unknown_error)
+            Result.Error(com.pignasoft.dotasks.R.string.unknown_error)
     }
 }

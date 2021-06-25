@@ -45,3 +45,9 @@ task("staticCheck") {
         dependsOn(lintDependencies + listOf("ktlintCheck", "detekt"))
     }
 }
+buildscript {
+    dependencies {
+        classpath(GradleOldWayPlugins.ANDROID_GRADLE)
+        classpath(GradleOldWayPlugins.NAVIGATION_SAFE_ARGS)
+    }
+}

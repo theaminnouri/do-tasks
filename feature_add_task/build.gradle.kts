@@ -3,6 +3,8 @@ import ModuleDependency.APP
 plugins {
     id(GradlePluginId.ANDROID_DYNAMIC_FEATURE)
     id(GradlePluginId.KOTLIN_ANDROID)
+    id(GradlePluginId.KOTLIN_KAPT)
+    id(GradlePluginId.SAFE_ARGS)
 }
 android {
     compileSdkVersion(AndroidConfig.COMPILE_SDK_VERSION)
@@ -38,6 +40,7 @@ android {
     testOptions {
         unitTests.isReturnDefaultValues = TestOptions.IS_RETURN_DEFAULT_VALUES
     }
+    buildFeatures.viewBinding = true
 }
 
 dependencies {

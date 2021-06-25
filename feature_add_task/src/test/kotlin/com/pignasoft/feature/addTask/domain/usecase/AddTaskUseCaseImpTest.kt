@@ -1,7 +1,7 @@
 package com.pignasoft.feature.addTask.domain.usecase
 
+import com.pignasoft.dotasks.feature.addTask.R
 import com.pignasoft.feature.addTask.domain.model.TaskDomainModel
-import com.pignasoft.dotasks.feature_add.R
 import com.pignasoft.feature.addTask.domain.repository.AddTaskRepository
 import io.mockk.MockKAnnotations
 import io.mockk.coEvery

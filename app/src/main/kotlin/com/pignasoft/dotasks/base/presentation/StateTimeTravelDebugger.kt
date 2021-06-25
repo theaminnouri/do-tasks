@@ -1,7 +1,7 @@
 package com.pignasoft.dotasks.base.presentation
 
+import com.pignasoft.dotasks.base.presentation.state.BaseStateEvent
 import com.pignasoft.dotasks.base.presentation.state.BaseViewState
-import com.pignasoft.dotasks.feature.base.presentation.state.BaseStateEvent
 import timber.log.Timber
 import kotlin.reflect.full.memberProperties
 

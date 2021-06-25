@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:moduleName="feature_tasks"
+    app:startDestination="@id/fragment_tasks">
+    <fragment
+        android:id="@+id/fragment_tasks"
+        android:name="com.pignasoft.feature.tasks.presentation.TasksFragment"
+        android:label="@string/tasks"
+        app:moduleName="feature_tasks" />
+
+</navigation>

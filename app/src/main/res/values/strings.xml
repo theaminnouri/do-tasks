@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Do tasks</string>
-    <string name="title_feature_add_task">Add</string>
+    <string name="unknown_error">unknown error</string>
+    <string name="profile">Profile</string>
+    <string name="tasks">Tasks</string>
+    <string name="add_task">Add Task</string>
 </resources>

@@ -1,7 +1,11 @@
 package com.pignasoft.dotasks.base.presentation
 
-import androidx.annotation.LayoutRes
+import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 
-abstract class BaseActivity(@LayoutRes layoutResourceId: Int) :
-    AppCompatActivity(layoutResourceId)
+abstract class BaseActivity :
+    AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+    }
+}
