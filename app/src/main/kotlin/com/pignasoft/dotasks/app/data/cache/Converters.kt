@@ -1,4 +1,4 @@
-package com.pignasoft.dotasks.data.cache
+package com.pignasoft.dotasks.app.data.cache
 
 import androidx.room.TypeConverter
 import com.pignasoft.dotasks.app.data.cache.model.TaskType

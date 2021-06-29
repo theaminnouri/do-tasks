@@ -12,9 +12,9 @@ sealed class Result {
     data class Error(val messageResId: Int) : Result()
 }
 
-class AddTaskUseCaseImp constructor(private val repository: AddTaskRepository) {
+class AddTaskUseCaseImp constructor(private val repository: AddTaskRepository) : AddTaskUseCase {
 
-    suspend fun add(task: TaskDomainModel): Result {
+    override suspend fun add(task: TaskDomainModel): Result {
         val add = repository.add(task)
         return if (add >= 0)
             Result.Success(add)

@@ -5,7 +5,6 @@ import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import com.pignasoft.dotasks.app.data.cache.dao.TaskDao
 import com.pignasoft.dotasks.app.data.cache.model.TaskEntity
-import com.pignasoft.dotasks.data.cache.Converters
 
 @TypeConverters(Converters::class)
 @Database(entities = [TaskEntity::class], version = 1)
