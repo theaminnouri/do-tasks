@@ -7,6 +7,7 @@ import com.pignasoft.dotasks.app.data.cache.AppDatabase
 import com.pignasoft.dotasks.app.data.cache.model.TaskEntity
 import kotlinx.coroutines.runBlocking
 import org.amshove.kluent.shouldBeEqualTo
+import org.junit.After
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -48,6 +49,11 @@ class TaskDaoTest {
         ).build()
 
         taskDao = database.getTaskDao()
+    }
+
+    @After
+    fun after() {
+        database.close()
     }
 
     @Test

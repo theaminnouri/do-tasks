@@ -1,4 +1,4 @@
-package com.pignasoft.feature.addTask.domain.model
+package com.pignasoft.feature.tasks.domain.model
 
 sealed class TaskTypeDomainModel {
     object Doable : TaskTypeDomainModel()

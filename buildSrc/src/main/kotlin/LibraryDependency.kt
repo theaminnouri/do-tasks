@@ -6,7 +6,7 @@ object LibraryVersion {
     const val APP_COMPAT = "1.2.0"
     const val ANDROID_CORE_KTX = "1.3.2"
     const val ANDROID_COROUTINE = "1.3.9"
-    const val MOCKK = "1.10.3-jdk8"
+    const val MOCKK = "1.12.0"
     const val FLUENT = "1.64"
     const val ROOM = "2.2.5"
     const val ANDROID_PLAY_CORE = "1.9.0"

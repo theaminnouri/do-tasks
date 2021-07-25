@@ -1,4 +1,4 @@
-package com.pignasoft.feature.addTask.presentation
+package com.pignasoft.feature.tasks.presentation
 
 import androidx.fragment.app.Fragment
 import com.pignasoft.dotasks.base.delegate.viewBinding

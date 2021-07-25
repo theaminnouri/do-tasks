@@ -1,12 +1,12 @@
-package com.pignasoft.feature.addTask.presentation
+package com.pignasoft.feature.tasks.presentation
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
-import com.pignasoft.feature.addTask.domain.model.TaskDomainModel
-import com.pignasoft.feature.addTask.domain.usecase.AddTaskUseCase
-import com.pignasoft.feature.addTask.domain.usecase.Result
-import com.pignasoft.feature.addTask.presentation.state.AddTaskStateEvent
-import com.pignasoft.feature.addTask.presentation.state.AddTaskViewState
+import com.pignasoft.feature.tasks.domain.model.TaskDomainModel
+import com.pignasoft.feature.tasks.domain.usecase.AddTaskUseCase
+import com.pignasoft.feature.tasks.domain.usecase.Result
+import com.pignasoft.feature.tasks.presentation.state.AddTaskStateEvent
+import com.pignasoft.feature.tasks.presentation.state.AddTaskViewState
 import io.mockk.MockKAnnotations
 import io.mockk.coEvery
 import io.mockk.impl.annotations.MockK

@@ -1,4 +1,4 @@
-package com.pignasoft.feature.addTask
+package com.pignasoft.feature.tasks
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry

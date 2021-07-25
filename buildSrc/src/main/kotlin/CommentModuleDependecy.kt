@@ -7,6 +7,8 @@ fun DependencyHandler.addTestDependencies() {
     androidTestImplementation(LibraryDependency.FLUENT)
     androidTestImplementation(LibraryDependency.ROOM_TEST)
     androidTestImplementation(LibraryDependency.ROOM_RUNTIME)
+    androidTestImplementation(LibraryDependency.ARCH_CORE_TESTING)
+    androidTestImplementation(LibraryDependency.MOCKK)
 
     testImplementation(LibraryDependency.KOTLIN_TEST_JUNIT)
     testImplementation(LibraryDependency.COROUTINE_TEST)

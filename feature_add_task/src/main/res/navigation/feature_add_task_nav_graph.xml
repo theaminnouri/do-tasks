@@ -5,7 +5,7 @@
     app:startDestination="@id/fragment_add_task">
     <fragment
         android:id="@+id/fragment_add_task"
-        android:name="com.pignasoft.feature.addTask.presentation.AddTaskFragment"
+        android:name="com.pignasoft.feature.tasks.presentation.AddTaskFragment"
         android:label="AddTask"
         app:moduleName="feature_add_task" />
 

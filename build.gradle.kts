@@ -11,7 +11,9 @@ plugins {
 }
 
 allprojects {
-
+    configurations.all {
+        resolutionStrategy.force("org.objenesis:objenesis:3.2")
+    }
     repositories {
         google()
         jcenter()

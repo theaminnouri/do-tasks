@@ -1,4 +1,4 @@
-package com.pignasoft.feature.addTask.presentation.state
+package com.pignasoft.feature.tasks.presentation.state
 
 import com.pignasoft.dotasks.base.presentation.state.BaseViewState
 

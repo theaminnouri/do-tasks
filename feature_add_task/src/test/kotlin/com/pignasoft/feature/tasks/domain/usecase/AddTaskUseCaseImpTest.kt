@@ -1,8 +1,8 @@
-package com.pignasoft.feature.addTask.domain.usecase
+package com.pignasoft.feature.tasks.domain.usecase
 
 import com.pignasoft.dotasks.feature.addTask.R
-import com.pignasoft.feature.addTask.domain.model.TaskDomainModel
-import com.pignasoft.feature.addTask.domain.repository.AddTaskRepository
+import com.pignasoft.feature.tasks.domain.model.TaskDomainModel
+import com.pignasoft.feature.tasks.domain.repository.AddTaskRepository
 import io.mockk.MockKAnnotations
 import io.mockk.coEvery
 import io.mockk.impl.annotations.MockK

@@ -1,11 +1,8 @@
-package com.pignasoft.dotasks.app.data.cache.model
+package com.pignasoft.feature.tasks.domain.model
 
-import androidx.room.Entity
-import androidx.room.PrimaryKey
+import com.pignasoft.dotasks.app.data.cache.model.TaskType
 
-@Entity(tableName = "tbl_tasks")
-data class TaskEntity(
-    @PrimaryKey(autoGenerate = false)
+data class Task(
     val id: Long,
     val title: String,
     val description: String,

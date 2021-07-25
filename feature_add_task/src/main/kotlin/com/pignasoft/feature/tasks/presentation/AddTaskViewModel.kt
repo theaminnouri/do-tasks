@@ -1,11 +1,11 @@
-package com.pignasoft.feature.addTask.presentation
+package com.pignasoft.feature.tasks.presentation
 
 import com.pignasoft.dotasks.base.presentation.BaseViewModel
-import com.pignasoft.feature.addTask.domain.usecase.AddTaskUseCase
-import com.pignasoft.feature.addTask.domain.usecase.Result.Error
-import com.pignasoft.feature.addTask.domain.usecase.Result.Success
-import com.pignasoft.feature.addTask.presentation.state.AddTaskStateEvent
-import com.pignasoft.feature.addTask.presentation.state.AddTaskViewState
+import com.pignasoft.feature.tasks.domain.usecase.AddTaskUseCase
+import com.pignasoft.feature.tasks.domain.usecase.Result.Error
+import com.pignasoft.feature.tasks.domain.usecase.Result.Success
+import com.pignasoft.feature.tasks.presentation.state.AddTaskStateEvent
+import com.pignasoft.feature.tasks.presentation.state.AddTaskViewState
 
 class AddTaskViewModel(private val addTaskUseCaseImp: AddTaskUseCase) :
     BaseViewModel<AddTaskViewState, AddTaskStateEvent>(AddTaskViewState()) {

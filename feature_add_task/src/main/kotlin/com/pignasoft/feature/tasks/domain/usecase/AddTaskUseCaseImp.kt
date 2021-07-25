@@ -1,7 +1,7 @@
-package com.pignasoft.feature.addTask.domain.usecase
+package com.pignasoft.feature.tasks.domain.usecase
 
-import com.pignasoft.feature.addTask.domain.model.TaskDomainModel
-import com.pignasoft.feature.addTask.domain.repository.AddTaskRepository
+import com.pignasoft.feature.tasks.domain.model.TaskDomainModel
+import com.pignasoft.feature.tasks.domain.repository.AddTaskRepository
 
 interface AddTaskUseCase {
     suspend fun add(task: TaskDomainModel): Result
