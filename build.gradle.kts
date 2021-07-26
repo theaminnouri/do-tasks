@@ -5,7 +5,8 @@ plugins {
     id(GradlePluginId.KTLINT_GRADLE)
     id(GradlePluginId.KOTLIN_JVM) apply false
     id(GradlePluginId.KOTLIN_ANDROID) apply false
-    id(GradlePluginId.KOTLIN_ANDROID_EXTENSIONS) apply false
+    id(GradlePluginId.KOTLIN_KAPT) apply false
+    id(GradlePluginId.KOTLIN_PARCELIZE) apply false
     id(GradlePluginId.ANDROID_APPLICATION) apply false
     id(GradlePluginId.ANDROID_LIBRARY) apply false
 }
@@ -13,6 +14,11 @@ plugins {
 allprojects {
     configurations.all {
         resolutionStrategy.force("org.objenesis:objenesis:3.2")
+        resolutionStrategy.eachDependency {
+            if (requested.group == "org.jetbrains.kotlin") {
+                this.useVersion(CoreVersion.KOTLIN)
+            }
+        }
     }
     repositories {
         google()

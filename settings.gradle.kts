@@ -6,16 +6,16 @@ pluginManagement {
     }
 
     plugins {
-        id("com.android.application") version "4.2.1"
-        id("com.android.library") version "4.2.1"
-        id("com.android.dynamic-feature") version "4.2.1"
+        id("com.android.application") version "4.2.2"
+        id("com.android.library") version "4.2.2"
+        id("com.android.dynamic-feature") version "4.2.2"
         id("androidx.navigation.safeargs.kotlin") version "2.3.5"
-        id("org.jetbrains.kotlin.jvm") version "1.4.20"
-        id("org.jetbrains.kotlin.android") version "1.4.20"
-        id("org.jetbrains.kotlin.android.extensions") version "1.4.20"
+        id("org.jetbrains.kotlin.jvm") version "1.5.21"
+        id("org.jetbrains.kotlin.android") version "1.5.21"
+        id("org.jetbrains.kotlin.plugin.parcelize") version "1.5.21"
         id("io.gitlab.arturbosch.detekt") version "1.15.0-RC1"
         id("org.jlleitschuh.gradle.ktlint") version "9.4.1"
-        id("org.jetbrains.kotlin.kapt") version "1.4.20"
+        id("org.jetbrains.kotlin.kapt") version "1.5.21"
     }
 
     resolutionStrategy {
@@ -25,7 +25,7 @@ pluginManagement {
                 "com.android.application",
                 "com.android.dynamic-feature",
                 "com.android.library"
-                -> useModule("com.android.tools.build:gradle:4.2.1")
+                -> useModule("com.android.tools.build:gradle:4.2.2")
             }
         }
     }

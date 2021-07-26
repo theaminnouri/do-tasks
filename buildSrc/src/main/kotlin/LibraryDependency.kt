@@ -8,7 +8,7 @@ object LibraryVersion {
     const val ANDROID_COROUTINE = "1.3.9"
     const val MOCKK = "1.12.0"
     const val FLUENT = "1.64"
-    const val ROOM = "2.2.5"
+    const val ROOM = "2.3.0"
     const val ANDROID_PLAY_CORE = "1.9.0"
     const val ANDROID_PLAY_CORE_KTX = "1.8.1"
     const val CONSTRAINT_LAYOUT = "2.0.4"
@@ -19,9 +19,10 @@ object LibraryVersion {
 }
 
 object LibraryDependency {
-
     const val KOTLIN =
         "org.jetbrains.kotlin:kotlin-stdlib:${CoreVersion.KOTLIN}"
+    const val KOTLIN_JDK8 =
+        "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${CoreVersion.KOTLIN}"
     const val KOTLIN_REFLECT =
         "org.jetbrains.kotlin:kotlin-reflect:${CoreVersion.KOTLIN}"
     const val ANDROID_CORE_KTX =

@@ -1,7 +1,7 @@
 plugins {
     id(GradlePluginId.ANDROID_APPLICATION)
     id(GradlePluginId.KOTLIN_ANDROID)
-    id(GradlePluginId.KOTLIN_ANDROID_EXTENSIONS)
+    id(GradlePluginId.KOTLIN_PARCELIZE)
     id(GradlePluginId.KTLINT_GRADLE)
     id(GradlePluginId.KOTLIN_KAPT)
     id(GradlePluginId.SAFE_ARGS)
@@ -52,10 +52,17 @@ android {
     buildFeatures {
         viewBinding = true
     }
+
+    kapt {
+        arguments {
+            arg("room.schemaLocation", "$projectDir/schemas")
+        }
+    }
 }
 
 dependencies {
     api(LibraryDependency.KOTLIN)
+    api(LibraryDependency.KOTLIN_JDK8)
     api(LibraryDependency.ANDROID_CORE_KTX)
     api(LibraryDependency.APP_COMPAT)
     api(LibraryDependency.ANDROID_MATERIAL)

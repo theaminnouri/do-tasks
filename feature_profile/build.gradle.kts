@@ -5,7 +5,6 @@ plugins {
     id(GradlePluginId.KOTLIN_ANDROID)
     id(GradlePluginId.SAFE_ARGS)
     id(GradlePluginId.KOTLIN_KAPT)
-    id("kotlin-android")
 }
 android {
     compileSdkVersion(AndroidConfig.COMPILE_SDK_VERSION)
