@@ -1,3 +1,5 @@
+import CoreVersion.JAVA
+
 plugins {
     id(GradlePluginId.ANDROID_APPLICATION)
     id(GradlePluginId.KOTLIN_ANDROID)
@@ -8,17 +10,15 @@ plugins {
 }
 
 android {
-    compileSdkVersion(AndroidConfig.COMPILE_SDK_VERSION)
+    compileSdk = AndroidConfig.COMPILE_SDK_VERSION
 
     defaultConfig {
         applicationId = AndroidConfig.ID
-        minSdkVersion(AndroidConfig.MIN_SDK)
-        targetSdkVersion(AndroidConfig.TARGET_SDK_VERSION)
-        buildToolsVersion(AndroidConfig.BUILD_TOOLS_VERSION)
-
+        minSdk = AndroidConfig.MIN_SDK
+        targetSdk = AndroidConfig.TARGET_SDK_VERSION
+        buildToolsVersion = AndroidConfig.BUILD_TOOLS_VERSION
         versionCode = AndroidConfig.VERSION_CODE
         versionName = AndroidConfig.VERSION_NAME
-
         testInstrumentationRunner = AndroidConfig.TEST_INSTRUMENTATION_RUNNER
     }
 
@@ -34,16 +34,15 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JAVA
+        targetCompatibility = JAVA
     }
 
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8.toString()
+        jvmTarget = JAVA.toString()
     }
 
-    dynamicFeatures = ModuleDependency.getDynamicFeatureModules().toMutableSet()
-    println(dynamicFeatures.toString())
+    dynamicFeatures.addAll(ModuleDependency.getDynamicFeatureModules().toMutableSet())
 
     testOptions {
         unitTests.isReturnDefaultValues = TestOptions.IS_RETURN_DEFAULT_VALUES

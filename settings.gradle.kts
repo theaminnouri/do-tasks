@@ -6,9 +6,9 @@ pluginManagement {
     }
 
     plugins {
-        id("com.android.application") version "4.2.2"
-        id("com.android.library") version "4.2.2"
-        id("com.android.dynamic-feature") version "4.2.2"
+        id("com.android.application") version "7.0.0"
+        id("com.android.library") version "7.0.0"
+        id("com.android.dynamic-feature") version "7.0.0"
         id("androidx.navigation.safeargs.kotlin") version "2.3.5"
         id("org.jetbrains.kotlin.jvm") version "1.5.21"
         id("org.jetbrains.kotlin.android") version "1.5.21"
@@ -25,7 +25,7 @@ pluginManagement {
                 "com.android.application",
                 "com.android.dynamic-feature",
                 "com.android.library"
-                -> useModule("com.android.tools.build:gradle:4.2.2")
+                -> useModule("com.android.tools.build:gradle:7.0.0")
             }
         }
     }

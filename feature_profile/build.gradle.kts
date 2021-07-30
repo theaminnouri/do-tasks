@@ -1,3 +1,4 @@
+import CoreVersion.JAVA
 import ModuleDependency.APP
 
 plugins {
@@ -7,15 +8,12 @@ plugins {
     id(GradlePluginId.KOTLIN_KAPT)
 }
 android {
-    compileSdkVersion(AndroidConfig.COMPILE_SDK_VERSION)
-    buildToolsVersion(AndroidConfig.BUILD_TOOLS_VERSION)
+    compileSdk = AndroidConfig.COMPILE_SDK_VERSION
+    buildToolsVersion = AndroidConfig.BUILD_TOOLS_VERSION
 
     defaultConfig {
-        minSdkVersion(AndroidConfig.MIN_SDK)
-        targetSdkVersion(AndroidConfig.TARGET_SDK_VERSION)
-
-        versionCode = AndroidConfig.VERSION_CODE
-        versionName = AndroidConfig.VERSION_NAME
+        minSdk = AndroidConfig.MIN_SDK
+        version = AndroidConfig.VERSION_CODE
         testInstrumentationRunner = AndroidConfig.TEST_INSTRUMENTATION_RUNNER
     }
 
@@ -29,12 +27,12 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JAVA
+        targetCompatibility = JAVA
     }
 
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8.toString()
+        jvmTarget = JAVA.toString()
     }
 
     testOptions {
