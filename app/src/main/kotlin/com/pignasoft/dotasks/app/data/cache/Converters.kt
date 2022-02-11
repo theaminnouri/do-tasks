@@ -14,8 +14,9 @@ class Converters {
     fun convert(str: String): List<String> =
         if (str.isNotBlank()) {
             str.removeSurrounding("[", "]").split(",").map { it.trim() }
-        } else
+        } else {
             emptyList()
+        }
 
     @TypeConverter
     fun convert(list: List<String>): String = list.toString()

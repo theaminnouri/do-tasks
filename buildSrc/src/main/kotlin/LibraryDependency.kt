@@ -8,14 +8,14 @@ object LibraryVersion {
     const val ANDROID_COROUTINE = "1.3.9"
     const val MOCKK = "1.12.0"
     const val FLUENT = "1.64"
-    const val ROOM = "2.3.0"
+    const val ROOM = "2.4.1"
     const val ANDROID_PLAY_CORE = "1.9.0"
     const val ANDROID_PLAY_CORE_KTX = "1.8.1"
     const val CONSTRAINT_LAYOUT = "2.0.4"
     const val ANDROID_LIFECYCLE = "2.3.1"
     const val ANDROID_ARCH = "2.1.0"
     const val TIMBER = "4.7.1"
-    const val NAVIGATION = "2.3.5"
+    const val NAVIGATION = "2.4.1"
 }
 
 object LibraryDependency {
